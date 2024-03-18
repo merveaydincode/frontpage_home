@@ -1,0 +1,83 @@
+aside {
+  width: 15%;
+  display:flex;
+  flex-direction: column;
+}
+
+.container {
+  padding: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.fa-bell-o {
+  margin-left: 0; /* Sayfanın en soluna dayanacak şekilde sıfırlıyoruz */
+  
+}
+
+.fa-user-o {
+  margin-right: 16px;
+}
+
+.button {
+  background-color: #f7f6f9;
+  color: black;
+  border: none;
+  font-size: 14px;
+  padding: 6px 12px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-left: 70px;
+  margin-right: 70px;
+}
+    .gold-icon {
+      width: 330px; /* Genişlik */
+      height: 260px; /* Yükseklik, otomatik olarak orantılı ayarlanır */
+    }
+
+  .datepicker{
+    border-radius: 5px;
+    padding: 20px;
+    margin-left: 5px;
+  }
+    .card4 {
+      margin-top: 60px;
+      width: 300px;
+      background-color: #fff;
+      border: 1px solid #000;
+      border-radius: 8px;
+      overflow: hidden;
+      margin-bottom: 40px;
+      margin-left: 10px;
+    }
+
+    .card5 {
+      width: 300px;
+      background-color: #fff;
+      border: 1px solid #000;
+      border-radius: 8px;
+      overflow: hidden;
+      margin-left: 10px;
+    }
+
+    .card-content {
+      padding: 30px;
+      padding-right: 70px;
+      display: flex;
+      align-items: center;
+    }
+    
+    .card-content img {
+      width: 55px; 
+      height: auto;
+    }
+  
+    .card-content p {
+      margin-left: 9px;
+      font-size: 16px;
+      color: #333;
+    }
+    
+    
+    
+  

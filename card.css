@@ -1,0 +1,48 @@
+
+.cards {
+    display: flex;
+    justify-content: center
+  }
+  
+  .card {
+    margin-top: 19px;
+    width: 170px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    border: 3px solid #fff;
+    border-radius: 12px;
+    margin-right: 20px;
+    padding: 27px;
+  }
+  .card .fa-twitter {
+    color: #1da1f2;
+    font-size: 32px;
+  }
+  .card .fa-instagram {
+    color: #7b4ed4;
+    font-size: 32px;
+  }
+  .card .fa-youtube {
+    color: #ff0000;
+    font-size: 32px;
+  }
+  .card .fa-facebook {
+    color: #1877f2;
+    font-size: 32px;
+  }
+  .card .title {
+    font-size: 32px;
+    font-weight: bold;
+    margin-top: 12px;
+  }
+  
+  .card .subtitle {
+    font-size: 12px;
+    color: gray;
+  }
+  .fa-ellipsis-h {
+    align-self: flex-end;
+    margin-top: 12px;
+  }
+  

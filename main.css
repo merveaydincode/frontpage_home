@@ -1,0 +1,112 @@
+main {
+   flex-grow: 0.5;
+    background-color: #f7f6f9;
+  }
+  main {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  main .topControls {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+  }
+  
+  main .topControls i:hover {
+    color: grey
+  }
+  main .topControls i{
+    color: #000;
+    font-size: 16px;
+  }
+  main .listingControls {
+    display: flex;
+    gap: 8px;
+  }
+  main .customSelect {
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 8px 16px;
+  }
+  
+  main .daysControls {
+    all: unset;
+    font-family: sans-serif;
+  }
+
+  .chart-container {
+    background-color: #fff;
+    border-radius: 15px;
+    width: 800px; /* Grafiği saran konteynerin maksimum genişliği */
+    height: auto; /* Grafiği saran konteynerin maksimum yüksekliği */
+    margin-bottom: 35px;
+    margin-top: 35px;
+    margin-left: 85px;
+   align-items: center;
+  }
+  
+  .cardss {
+    display: flex;
+  }
+  .cardd {
+    text-align: center;
+    border: #ccc;
+    border-radius: 5px;
+    padding: 20px;
+  }
+  
+  .card1 { 
+    border-radius: 18px;
+    padding: 20px; /* Kart içeriğinden kenara boşluk */
+    width: 380px; /* Kartın genişliği */
+    height: auto;
+    background-color:white;
+    margin-left: 75px;
+    margin-right: 40px;
+  }
+  .title2 {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px; /* Başlık ile alt başlıklar arasında boşluk */
+  }
+  .subtitles {
+    margin-top: 10px; /* Alt başlıklar arasında boşluk ekler */
+  }
+  .subtitle5 {
+    display: block;
+    margin-bottom: 5px; /* Alt başlıklar arasında boşluk ekler */
+    word-spacing: 170px; /* Yazılar ve sayılar arasında boşluk bırakır */
+  }
+ 
+  .card2, .card3 {
+    width: 175px; /* Diğer iki kartın genişliği */
+    height: auto;
+    border-radius: 18px;
+    margin-right: 40px;
+    background-color: rgba(96, 8, 96, 0.829);
+  }
+  
+  .title1 {
+    color: white;
+    font-size: 18px;
+    margin-bottom: 10px; /* Başlık ile alt başlıklar arasında boşluk */
+  }
+  
+  .subtitle1 {
+    color: white;
+    display: block;
+    font-size: 35px;
+    margin-bottom: 0px;
+  }
+
+  .subtitlef {
+    color: white;
+    font-size: 15px;
+  }
+  
+  
+  
+  
+  

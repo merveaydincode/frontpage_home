@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Instagram Subscribers Chart</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="body.css">
+  <link rel="stylesheet" href="nav.css">
+  <link rel="stylesheet" href="main.css">
+  <link rel="stylesheet" href="aside.css">
+  <link rel="stylesheet" href="card.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <link
+      rel="stylesheet"
+      href="https://netdna.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="bootstrapDatepicker.css" />
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+    <script src="https://unpkg.com/bootstrap-datepicker@1.9.0/dist/js/bootstrap-datepicker.min.js"></script>
+  <style>
+    .card {
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      cursor: pointer;
+    }
+    .card:hover {
+      transform: scale(1.05);
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+    .card:active {
+      transform: scale(1);
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <ul>
+      <li>
+    <a href="#"><i class="fa-2x fa fa-eye"></i></a></li>
+    <hr>
+      <li>
+        <a href="#"><i class="fa-2x fa fa-heart"></i></a>
+      </li>
+      <li>
+        <a href="#"><i class="fa-2x fa fa-podcast"></i></a>
+      </li>
+      <li>
+        <a href="#"><i class="fa-2x fa fa-calendar"></i></a>
+      </li>
+      <li>
+        <a href="#"><i class="fa-2x fa fa-cog"></i></a>
+      </li>
+      <li>
+        <a href="#"><i class="fa-2x fa fa-comments"></i></a>
+      </li><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <a href="#"><i class="fa-2x fa fa-sign-out"></i></a>
+  </li>
+</ul>
+  </nav>
+  <main>
+    <div class="topControls">
+      <div class="listingControls">
+        <a href="#"><i class="fa-x fa fa-list"></i></a>
+        <a href="#"><i class="fa-x fa fa-bars"></i></a>
+      </div>
+      <div class="customSelect">
+        <select name="days" id="days" class="daysControls">
+          <option value="15">Last 15 days</option>
+          <option value="30">Last 30 days</option>
+        </select>
+        <i class="fa fa-caret-down"></i>
+      </div>
+    </div>
+    <div class="cards">
+      <div class="card" onclick="cardClicked(this)" onmouseover="cardHovered(this)" onmouseleave="cardLeft(this)">
+        <i class="fa fa-twitter"></i>
+        <span class="title">280k</span>
+        <span class="subtitle">Followers</span>
+        <i class="fa fa-ellipsis-h"></i>
+      </div>
+      <div class="card" onclick="cardClicked(this)" onmouseover="cardHovered(this)" onmouseleave="cardLeft(this)">
+        <i class="fa fa-instagram"></i>
+        <span class="title">680k</span>
+        <span class="subtitle">Followers</span>
+        <i class="fa fa-ellipsis-h"></i>
+      </div>
+      <div class="card" onclick="cardClicked(this)" onmouseover="cardHovered(this)" onmouseleave="cardLeft(this)">
+          <i class="fa fa-youtube"></i>
+          <span class="title">2.3M</span>
+          <span class="subtitle">Followers</span>
+          <i class="fa fa-ellipsis-h"></i>
+        </div>
+        <div class="card" onclick="cardClicked(this)" onmouseover="cardHovered(this)" onmouseleave="cardLeft(this)">
+          <i class="fa fa-facebook"></i>
+          <span class="title">50k</span>
+          <span class="subtitle">Followers</span>
+          <i class="fa fa-ellipsis-h"></i>
+        </div>
+    </div> 
+    <div class="chart-container">
+      <canvas id="subscribersChart"></canvas>
+      <script src="chart.js"></script>
+    </div>
+    
+<div class="cardss">
+  <div class="card1 cardd">
+    <span class="title2">Key Metrics</span>
+    <div class="subtitles">
+      <span class="subtitle5">Clicks &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;10k</span><hr>
+      <span class="subtitle5">Likes &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;680</span><hr>
+      <span class="subtitle5">Followers &emsp;&emsp;&emsp;&emsp;&emsp;8k</span><hr>
+      <span class="subtitle5">Impressions &emsp;&emsp;&emsp;5500</span>
+    </div>
+  </div>
+  <div class="card2 cardd">
+    <span class="title1">Engaged Users</span><br><br><br><br>
+    <span class="subtitle1">12.2k</span><br><br><br>
+    <i class="fa solid fa-x fa-forward fa-rotate-270" style="color: #63E6BE;"></i>
+    <span class="subtitlef">19%</span>
+  </div>
+  <div class="card3 cardd">
+    <span class="title1">Page Impressions</span><br><br><br>
+    <span class="subtitle1">8.6k</span><br><br><br>
+    <i class="fa solid fa-x fa-forward fa-rotate-90" style="color: #ed5c2c;"></i>
+    <span class="subtitlef">9%</span>
+  </div>
+</div>
+
+  </main>
+  <aside>
+    <div class="container">
+    <!-- <div class="container">
+      <div class="listingControls1"> -->
+        <i class="fa-x fa fa-bell-o"></i>
+      <!-- </div> -->
+      <!-- <div class="customSelect1"> -->
+       <a href="#" class="button"><i class="fa fa-gift"></i> 2 New Updates </a>
+      <!-- </div>
+      <div class="listingControls2"> -->
+       <i class="fa-x fa fa-user-o"></i>
+      </div></div>
+      <!-- </div> -->
+       <img src="pic1.png" alt="Altın" class="gold-icon">
+      <div class="datepicker"></div>
+    <script>
+      $(".datepicker").datepicker();
+    </script>
+    <div class="card4">
+      <div class="card-content">
+      <p>Say hi to Laith Hart</p>
+      <img src="pic.png" alt="Resim">
+    </div>
+  </div>
+  <div class="card5">
+    <div class="card-content">
+    <p>Say hi to Sidney Dyer</p>
+    <img src="picc.png" alt="Resim">
+  </div>
+</div>
+
+</aside>
+</body>
+</html>

@@ -1,0 +1,13 @@
+body {
+    display: flex;
+    flex-direction: row;
+    height: auto;
+    margin: 0;
+    font-family: sans-serif;
+  }
+  
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+  
